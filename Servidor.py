@@ -42,3 +42,4 @@ while True:
     finally:
         # Clean up the connection
         connection.close()
+        
