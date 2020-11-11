@@ -19,11 +19,13 @@ ip varchar(100)
 
 CREATE TABLE Trazabilidad
 (
-idTrazabilidad int primary key not null,
+idTrazabilidad int primary key not null auto_increment,
 estado varchar (100),
 hexadigest varchar (300),
 ip varchar(100)
 );
+
+DROP TABLE Trazabilidad;
 
 select *
 from Firma;
@@ -83,6 +85,6 @@ INSERT INTO Firma (idHasd, nombre, hexadigest, ip) VALUES (49,"F49", "61e8825653
 INSERT INTO Firma (idHasd, nombre, hexadigest, ip) VALUES (50,"F50", "c35cdd5dd5cefa9cd3f75bbc9c02f2ed", "192.168.100.3");
 
 
-INSERT INTO Trazabilidad (idTrazabilidad, estado, hexadigest, ip) VALUES (1,"Peligroso", "df12015efabd4f6f867c428a2179c10f", "192.168.100.3");
-INSERT INTO Trazabilidad (idTrazabilidad, estado, hexadigest, ip) VALUES (2,"Peligroso", "96364393584887e19ec15d0d5790e5df", "192.168.100.3");
-INSERT INTO Trazabilidad (idTrazabilidad, estado, hexadigest, ip) VALUES (3,"Peligroso", "790f66c4aaa1df5d5cf5a95d67da96ab", "192.168.100.3");
+INSERT INTO Trazabilidad (idTrazabilidad, estado, hexadigest, ip) VALUES (0,"Peligroso", "df12015efabd4f6f867c428a2179c10f", "192.168.100.3");
+INSERT INTO Trazabilidad (idTrazabilidad, estado, hexadigest, ip) VALUES (0,"Peligroso", "96364393584887e19ec15d0d5790e5df", "192.168.100.3");
+INSERT INTO Trazabilidad (idTrazabilidad, estado, hexadigest, ip) VALUES (0,"Peligroso", "790f66c4aaa1df5d5cf5a95d67da96ab", "192.168.100.3");
