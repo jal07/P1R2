@@ -1,0 +1,3 @@
+Sitios web para referencia>
+https://www.neoguias.com/como-conectarse-a-mysql-usando-python/
+https://rico-schmidt.name/pymotw-3/socket/tcp.html
